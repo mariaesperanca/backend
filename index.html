@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de variaveis</title>
+</head>
+<body>
+    <script>
+        //uso de var
+        var nome = "Ana"
+       //uso de let
+        let idade = "17"
+       //uso de const
+        const saldo = 3336.76;
+        console.log(saldo);
+        console.log(nome);
+        console.log(idade);
+        let a =5;
+        let b =10;
+        console.log (a == b);
+        console.log (a == 5);
+        console.log (2*a == b);
+        console.log (2*a == b);
+        console.log (a !== b);
+        console.log (a !== 5);
+        console.log ( a > b );
+        console.log ( a < b );
+        console.log ( a >= 5);
+        console.log ( a <= 10 );
+
+        let status = idade >=18 ? 'adulto' : 'di menor';
+        console.log (status);
+
+        const saudacao = `olá, ${nome}!`;
+        console.log (saudacao)
+       
+       
+    </script>
+    <h2>Qual a capital do Brasil</h2>
+    <button onclick="verificaresp('A')">A Brasilia</button>
+    <button onclick="verificaresp('B')">B RJ</button>
+    <button onclick="verificaresp('C')">C SP</button>
+    <button onclick="verificaresp('D')">D BH</button>
+<script>
+         function verificaresp(resp){
+                var correta = "A";
+                if (resp === correta){
+                    window.alert('acertou');
+
+                }else{
+                    window.alert('errou');
+                }
+            }
+</script>
+</body>
+</html>
